@@ -1,0 +1,194 @@
+@import url(style2.css);
+@import url(style3.css);
+
+body {
+  margin: 0px;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  background-color: #f5e9db;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+header {
+  height: auto;
+}
+.gratuite {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1rem;
+  /* color: #e6782f; */
+  font-style: oblique;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #e7d4cf;
+  margin: 10px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px gray;
+  height: auto;
+}
+.logo-bijoux {
+  color: #cfa340;
+  height: auto;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  background-color: #513e35;
+  margin: 0px 20px 0px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px gray;
+}
+.logobar {
+  /* position: sticky; */
+
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.connecte {
+  color: black;
+  text-decoration: none;
+}
+
+.conn li {
+  list-style: none;
+}
+
+.bsearch {
+  margin: 0px 5px;
+  font-size: 1.5rem;
+  color: gray;
+}
+span a {
+  text-decoration: none;
+}
+span a:hover {
+  color: grey;
+}
+
+.bpanier {
+  margin: 0px 5px;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.bmenu {
+  color: black;
+}
+
+.divmenu {
+  background-color: #e7d4cf;
+
+  text-align: start;
+  margin: 10px 0px 0px 20px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 0px 40px gray;
+}
+
+.sc a {
+  color: black;
+}
+.sc {
+  margin-left: 100px;
+}
+.bBijoux {
+  width: 15px;
+  background-color: #e7d4cf;
+}
+video {
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px gray;
+  width: 310px;
+  height: 310px;
+  padding: 5px;
+  margin: 10px;
+}
+.bar {
+  margin: 10px 50px;
+  text-decoration: none;
+  color: #000;
+}
+.bpanier span {
+  color: #000;
+  font-size: 1rem;
+}
+.imgcarosel {
+  border-radius: 40px;
+  width: auto;
+  height: auto;
+}
+.divcarosel h5 a {
+  background-color: #000;
+  text-decoration: none;
+  color: #cfa340;
+  border-radius: 200px;
+  padding: 10px 20px;
+}
+.divcarosel h5 a:hover {
+  color: #cfa340;
+}
+h5 a:hover {
+  color: #000;
+}
+.divcarousel {
+  border-radius: 40px;
+}
+.logo-bijoux {
+  color: #cfa340;
+  height: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #513e35;
+  margin: 10px 20px 0px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px gray;
+}
+.logo-bijoux a {
+  text-decoration: none;
+  color: #cfa340;
+}
+.livraison {
+  font-size: medium;
+  color: #e6782f;
+  font-style: oblique;
+  margin: 80px 10px 80px 10px;
+}
+.livrai {
+  padding-top: 15px;
+}
+.paiement {
+  padding-top: 15px;
+}
+.Échanges {
+  padding-top: 15px;
+}
+.coeur {
+  font-style: oblique;
+  font-size: 1.2;
+  /* font-weight: bold; */
+  margin: 0px;
+  color: gray;
+  /* text-shadow: gray 0px 0px 2px;*/
+}
+
+/******************************************fealsdet************************************/
+article img {
+  border-radius: 10px;
+}
+article {
+  align-items: center;
+}
+.divfieldset {
+  padding: 20px;
+}
+
+.ajouter {
+  color: gray;
+}
+.ajouter :hover {
+  color: gray;
+}

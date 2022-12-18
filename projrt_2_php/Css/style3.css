@@ -1,0 +1,118 @@
+fieldset {
+    color: #000;
+    background-color: #fff;
+    margin: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px gray;
+  }
+  button {
+    border: 0px;
+    background-color: #fff;
+  }
+  
+  #photo2 {
+    z-index: 2;
+    margin-top: -330px;
+  
+    height: 100%;
+    width: 100%;
+    padding-top: 7px;
+  }
+  #photo1 {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .f1 {
+    background-size: 100% 100%;
+  }
+  #photo2 {
+    visibility: hidden;
+  }
+  
+  .f1:hover #photo2 {
+    visibility: visible;
+  }
+  #voirplus {
+    visibility: hidden;
+    margin-bottom: 5px;
+  }
+  .non a:hover #voirplus {
+    visibility: visible;
+  }
+  .non a {
+    color: gray;
+    text-decoration: none;
+  }
+  .non a:hover {
+    color: gray;
+  }
+  
+  /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  footer {
+    background-color: #fff;
+    color: gray;
+    height: auto;
+    margin: 0px 20px 20px 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px grey;
+  }
+  .condition a {
+    color: gray;
+    text-decoration: none;
+  }
+  .condition {
+    height: 200px;
+  }
+  .foot {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .newsletter {
+    padding: 50px 0;
+  }
+  
+  .newsletter .content {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .newsletter .content h2 {
+    color: gray;
+    margin-bottom: 20px;
+  }
+  .newsletter .content .form-control {
+    height: 50px;
+    font-size: 12px;
+  
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 5px;
+  }
+  .newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid gray;
+  }
+  .newsletter .content .btn {
+    min-height: 50px;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  /* .notification {
+    background-color: #513e35;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute; /* changed */
+  /* top: -5px; /* changed */
+  /* left: 18px; changed*/
+  
