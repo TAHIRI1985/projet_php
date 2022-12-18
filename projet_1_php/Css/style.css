@@ -1,0 +1,366 @@
+@charset "UTF-8";
+body {
+    background-color: #f5e9db;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.15rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-end;
+    /* font-size: 1.3rem; */
+    height: auto;
+    width: auto;
+    background-color: #e7d4cf;
+    box-shadow: 0px 0px 40px gray;
+    color: #000;
+    /* padding-left: 30px;
+       padding-right: 30px;
+       padding-top: 5px; */
+    margin: 10px 20px 0px 20px;
+    border-radius: 10px;
+  }
+  header p {
+    /* color:#5a3218 ;  */
+    font-size: 1.2rem;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+    margin-bottom: 5px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-right: 0px;
+    font-size: 1.17rem;
+  
+    /* padding: 0px;
+    margin: 0px; */
+  }
+  .search a {
+    font-size: 2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  .logo-bijoux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #cfa340;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #513e35;
+    margin: 10px 20px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px gray;
+    /* transition: all .5s ease;
+       cursor: pointer; */
+  }
+  /* .logo-bijoux span a:hover{
+       width: 55px;
+       height: 55px;
+  
+  }
+   */
+  
+  /* p{
+       animation: apparition 0.8s ease-out;
+  }
+  @keyframes apparition {
+      from{
+          opacity: 0;
+          transform: translateY(-100px);
+      }
+      to{
+          opacity: 1;
+          transform: translateY(0px);
+    
+  } */
+  
+  nav span {
+    display: flex;
+    margin: 10px;
+    color: #000;
+  }
+  nav span label : {
+    margin: 50px;
+    padding: 5px;
+  }
+  nav span label :hover {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #a5b591;
+  }
+  
+  nav span a {
+    color: #000;
+    padding: 10px;
+  }
+  nav span a:hover {
+    background-color: #fff;
+    color: #a5b591;
+    border-radius: 8px;
+  }
+  nav ul a {
+    color: #000;
+    padding: 5px;
+    margin: 10px;
+  }
+  nav ul a:hover {
+    background-color: #fff;
+    color: #a5b591;
+    border-radius: 8px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  /* ////////////////////////////////////////////////////fiemdset/////////////////////////////////////////////////////////////// */
+  fieldset {
+    width: 450px;
+    height: 400px;
+    color: #000;
+    background-color: #fff;
+    margin: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px gray;
+    transition: all 0.5s ease;
+  }
+  /* //////////////////f1////////////////////// */
+  .f1 {
+    width: 450px;
+    height: 350px;
+  }
+  #photo1 {
+    visibility: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    /* transition: all .5s ease; */
+  }
+  .f1 {
+    background-size: 100% 100%;
+    background-image: url(../images/braslete1-removebg-preview.png);
+  }
+  .f1:hover #photo1 {
+    visibility: visible;
+  }
+  .f1:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  #photo1:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  /* /////////////////f2//////////////////////// */
+  .f2 {
+    width: 450px;
+    height: 350px;
+  }
+  #photo2 {
+    visibility: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    /* transition: all .5s ease; */
+  }
+  .f2 {
+    background-size: 100% 100%;
+    background-image: url(../images/b.oreille2.png);
+  }
+  .f2:hover #photo2 {
+    visibility: visible;
+  }
+  .f2:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  #photo2:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  /* //////////////////////f3/////////////////////////// */
+  
+  .f3 {
+    width: 450px;
+    height: 350px;
+  }
+  #photo3 {
+    visibility: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    /* transition: all .5s ease; */
+  }
+  .f3 {
+    background-size: 100% 100%;
+    background-image: url(../images/bage2.png);
+  }
+  .f3:hover #photo3 {
+    visibility: visible;
+  }
+  .f3:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  #photo3:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  /* ////////////////////////////////////////////f4////////////////////////////////// */
+  
+  .f4 {
+    width: 450px;
+    height: 350px;
+  }
+  #photo4 {
+    visibility: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    /* transition: all .5s ease; */
+  }
+  .f4 {
+    background-size: 100% 100%;
+    background-image: url(../images/bracelet2.png);
+  }
+  .f4:hover #photo4 {
+    visibility: visible;
+  }
+  .f4:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  #photo4:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  
+  /* ///////////////////////////f5/////////////////////// */
+  
+  .f5 {
+    width: 450px;
+    height: 350px;
+  }
+  #photo5 {
+    visibility: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    /* transition: all .5s ease; */
+  }
+  .f5 {
+    background-size: 100% 100%;
+    background-image: url(../images/b.cheville2.png);
+  }
+  .f5:hover #photo5 {
+    visibility: visible;
+  }
+  .f5:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  #photo5:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  /* //////////////////f6/////////////////////////////////////// */
+  .f6 {
+    width: 450px;
+    height: 350px;
+  }
+  #photo6 {
+    visibility: hidden;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    /* transition: all .5s ease; */
+  }
+  .f6 {
+    background-size: 100% 100%;
+    background-image: url(../images/collier2.png);
+  }
+  .f6:hover #photo6 {
+    visibility: visible;
+  }
+  .f6:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; *6*/
+  }
+  #photo6:hover {
+    width: 550px;
+    height: 420px;
+    /* transition: all 500ms ease; */
+  }
+  
+  /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  footer {
+    height: 250px;
+    margin: 0px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px;
+  }
+  
+  .condition {
+    display: flex;
+    justify-content: center;
+  }
+  .condition a {
+    padding: 30px;
+    color: gray;
+    /* margin-left: 50px;
+     margin-left: 50px; */
+  }
+  .icon-generale {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    color: gray;
+  }
+  .icon-generale a {
+    color: gray;
+  }
+  footer {
+    background-color: #fff;
+  }
+  .copie {
+    margin-left: 50px;
+  }
+  
