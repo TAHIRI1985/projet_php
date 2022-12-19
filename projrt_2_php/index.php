@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+ 
     <title>Bijoux Siam</title>
-    <link rel="shartcut icon" href="../images/type9-removebg-preview.png" />
+    <link rel="shartcut icon" href="../images/type9-removebg-preview.png"  />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -27,8 +28,7 @@
     />
   </head>
   <body>
-    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    
     
     <?php include("header.php"); ?>
     <?php include("main.php"); ?>
@@ -46,7 +46,6 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-<!--   
-    <script src="js/main.js"></script>  -->
+
   </body>
 </html>
