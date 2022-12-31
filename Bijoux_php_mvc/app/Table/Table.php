@@ -32,7 +32,7 @@ class Table
 
     public static function find($id)
     {
-        return App::getDb()->prepare("SELECT *FROM   WHERE id=?    " . static::getTable() . "    ", [$id], get_called_class(), true);
+        return App::getDb()->prepare('SELECT *FROM   ' . static::getTable() . '  WHERE id = ? ', [$id], get_called_class(), true);
     }
     public static function all()
     {

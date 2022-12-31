@@ -100,16 +100,13 @@
     </nav>
 </header>
 <div id="getFixed" class=" logobar container-fluid  ">
+
     <div class="row logo-bijoux">
-
-
-
-
-
         <?php foreach (\App\Table\Categorie::all() as $categorie) : ?>
-            <div class="coll"><a href="<?= $categorie->url ?>">
+            <div class="col"><a href="<?= $categorie->url ?>">
                     <img src="<?= $categorie->image_Categorie ?>" alt="<?= $categorie->nom_Categorie ?>" width="50" height="50">
-                    <?= $categorie->nom_Categorie ?></a></div>
+                    </br> <?= $categorie->nom_Categorie ?></a></div>
         <?php endforeach; ?>
     </div>
+
 </div>

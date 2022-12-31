@@ -27,7 +27,7 @@
         foreach (\App\Table\Article::getLast() as $news) :  ?>
 
 
-            <fieldset class=" acol-ms-12 col-md-5 col-lg-3 ">
+            <fieldset class=" col-ms-12 col-md-5 col-lg-3 ">
                 <article class="f1 ">
 
                     <img id="photo1" <?= $news->getImage1() ?> alt="bijoux" height="">
