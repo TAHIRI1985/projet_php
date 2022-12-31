@@ -23,8 +23,10 @@ class Database
 
     private function getPDO()
     {
+
+
         if ($this->pdo === null) {
-            $pdo = new PDO('mysql:host=localhost;dbname=bijoux', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=bijoux-siam', 'root', '');
 
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->pdo = $pdo;
@@ -35,10 +37,18 @@ class Database
     }
 
 
-    public function query($statement, $class_name)
+    public function query($statement, $class_name, $one = false)
     {
-        $requet = $this->getPDO()->query($statement);
-        $datas = $requet->fetchAll(PDO::FETCH_CLASS, $class_name);
+        $req = $this->getPDO()->query($statement);
+
+        $req->setFetchMode(PDO::FETCH_CLASS, $class_name);
+
+        if ($one) {
+            $datas = $req->fetch();
+        } else {
+            $datas = $req->fetchAll();
+        }
+
         return $datas;
     }
 

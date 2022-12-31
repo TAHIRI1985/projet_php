@@ -101,11 +101,15 @@
 </header>
 <div id="getFixed" class=" logobar container-fluid  ">
     <div class="row logo-bijoux">
-        <div class="col"><a href="#"><img src="images/f1.png" alt="collier" width="50" height="50"></br>Collier </a></div>
-        <div class="col"><a href="#"> <img src="images/f2.png" alt="b.d'oreille" width="50" height="50"></br>B.d'oreille</a></div>
-        <div class="col"> <a href="#"> <img src="images/f3.png" alt="braslets" width="50" height="50"></br>Bracelet</a></div>
-        <div class="col"><a href="#"><img src="images/f4.png" alt="bage" width="50" height="50"></br>Bague</a></div>
-        <div class="col"> <a href="#"><img src="images/f5.png" alt="b cheville" width="50" height="50"></br> B.cheville</a></div>
-        <div class="col"><a href="#"><img src="images/Montere.png" alt="b cheville" width="50" height="50"></br>Montre</a></div>
+
+
+
+
+
+        <?php foreach (\App\Table\Categorie::all() as $categorie) : ?>
+            <div class="coll"><a href="<?= $categorie->url ?>">
+                    <img src="<?= $categorie->image_Categorie ?>" alt="<?= $categorie->nom_Categorie ?>" width="50" height="50">
+                    <?= $categorie->nom_Categorie ?></a></div>
+        <?php endforeach; ?>
     </div>
 </div>

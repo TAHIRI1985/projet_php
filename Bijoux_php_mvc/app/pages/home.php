@@ -20,13 +20,17 @@
 
 
 
-        <?php foreach (App\App::getDb()->query('SELECT * FROM article', 'App\Table\Article')  as $news) :  ?>
+        <?php
+
+        use App\Table\Article;
+
+        foreach (\App\Table\Article::getLast() as $news) :  ?>
 
 
             <fieldset class=" acol-ms-12 col-md-5 col-lg-3 ">
                 <article class="f1 ">
 
-                    <a href="<?= $news->url ?>"><img id="photo1" <?= $news->getImage() ?> alt="bijoux" height=""> </a>
+                    <img id="photo1" <?= $news->getImage1() ?> alt="bijoux" height="">
 
                 </article>
                 <button v-if="product.quantity>0" @click=" product.quantity -=1 ; product.count++ " class=" ajouter" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
@@ -35,14 +39,14 @@
                 </button>
 
                 <article class="non">
+                    <?= $news->categorie ?></br>
+                    <?= $news->getDescription() ?>
+                    <?= $news->getQuantity() ?>
 
-                    <a href="<?= $news->url ?>"> <?= $news->getDescription() ?>
-                        <?= $news->getQuantity() ?>
-
-                        </br>
-                        <span class="prix"> <?= $news->getPrix() ?> </span>
-                        <br>
-
+                    </br>
+                    <span class="prix"> <?= $news->getPrix() ?> </span>
+                    <br>
+                    <a href="<?= $news->url ?>">
                         <button id="voirplus" type="button" class="btn btn-secondary ">Voir Plus</button>
                     </a>
 

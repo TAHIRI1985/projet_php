@@ -2,7 +2,7 @@
 
 
 
-$post = App\App::getDb()->prepare('SELECT*FROM article WHERE id= ?', [$_GET['id']], 'App\Table\Article', true);
+$post = App\App::getDb()->prepare('SELECT*FROM articles WHERE id= ?', [$_GET['id']], 'App\Table\Article', true);
 
 ?>
 
@@ -10,6 +10,7 @@ $post = App\App::getDb()->prepare('SELECT*FROM article WHERE id= ?', [$_GET['id'
 
 <div class=" divfieldset container-fluid">
     <div id="app" class="row justify-content-center  ">
+
         <h5> <?= $post->getDescription() ?></h5>
         <h5><span class="prix"> <?= $post->getPrix() ?> </span></h5>
 
@@ -17,8 +18,8 @@ $post = App\App::getDb()->prepare('SELECT*FROM article WHERE id= ?', [$_GET['id'
             <article class="f1 ">
 
 
-                <img id="photo1" <?= $post->getImage() ?> alt="bijoux" height="">
-
+                <img id="photo1" <?= $post->getImage1() ?> alt="bijoux" height="">
+                <img id="photo1" <?= $post->getImage2() ?> alt="bijoux" height="">
             </article>
 
 

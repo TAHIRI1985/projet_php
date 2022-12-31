@@ -6,7 +6,7 @@ class App
 {
 
 
-    const DB_NAME = 'bijoux';
+    const DB_NAME = 'bijoux-siam';
     const DB_USER = 'root';
     const DB_PASS = '';
     const DB_HOST = 'localhost';
@@ -17,5 +17,12 @@ class App
             self::$database = new Database(self::DB_NAME, self::DB_USER, self::DB_PASS, self::DB_HOST);
         }
         return self::$database;
+    }
+
+
+    public static function notFound()
+    {
+        header("HTTP/1.0 4004 Not Found");
+        header('location:index.php?=p404');
     }
 }

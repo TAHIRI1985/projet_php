@@ -2,14 +2,37 @@
 
 namespace App\Table;
 
-class Article
+use App\App;
+
+class Article extends Table
 {
 
-    public function  __get($Key)
+
+    public static function getLast()
     {
-        $method = 'get' . ucfirst($Key);
-        $this->$Key = $this->$method();
-        return $this->$Key;
+        return self::query("SELECT articles.id , articles.nom_Article, articles.description_Article,articles.image1_Article,
+                                     articles.image2_Article, 
+                                     articles.Quantité,articles.prix_Article, categories.nom_Categorie as categorie
+                                     FROM  articles 
+                                     LEFT  JOIN categories
+                                     ON  id_categories=categories.id
+
+                                    ");
+    }
+
+
+
+    public static function lastByCategorie($id_categories)
+    {
+        return self::query("SELECT articles.id , articles.nom_Article, articles.description_Article,articles.image1_Article,
+                                     articles.image2_Article, 
+                                     articles.Quantité,articles.prix_Article, categories.nom_Categorie as categorie
+                                     FROM  articles 
+                                     LEFT  JOIN categories
+                                     ON  id_categories=categories.id
+                                     WHERE id_categories= ?
+
+        ", [$id_categories]);
     }
 
 
@@ -17,9 +40,14 @@ class Article
     {
         return 'index.php?p=article&id=' . $this->id;
     }
-    public function getImage()
+
+    public function getImage1()
     {
-        return 'src=' . "$this->image_Article";
+        return 'src=' . "$this->image1_Article";
+    }
+    public function getImage2()
+    {
+        return 'src=' . "$this->image2_Article";
     }
     public function getDescription()
     {
@@ -32,6 +60,6 @@ class Article
     }
     public function getPrix()
     {
-        return 'prix:' . $this->prix . ' € ';
+        return 'prix:' . $this->prix_Article . ' € ';
     }
 }
