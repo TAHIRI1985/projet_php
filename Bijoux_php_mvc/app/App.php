@@ -11,6 +11,8 @@ class App
     const DB_PASS = '';
     const DB_HOST = 'localhost';
     private static $database;
+    private static $title = 'Bijoux Siam';
+
     public static function getDb()
     {
         if (self::$database === null) {
@@ -24,5 +26,13 @@ class App
     {
         header("HTTP/1.0 4004 Not Found");
         header('location:index.php?p=404');
+    }
+    public static function getTitle()
+    {
+        return self::$title;
+    }
+    public static function setTitle($title)
+    {
+        self::$title = self::$title . ':' .    $title;
     }
 }

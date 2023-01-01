@@ -13,6 +13,7 @@ if ($categorie === false) {
 
 $articles = Article::lastByCategorie($_GET['id']);
 $categories = Categorie::all();
+App::setTitle($categorie->nom_Categorie);
 ?>
 
 

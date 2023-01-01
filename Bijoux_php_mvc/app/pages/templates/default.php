@@ -3,8 +3,8 @@
 
 <head>
 
-    <title>Bijoux Siam</title>
-    <link rel="shartcut icon" href="images/type9-removebg-preview.png" />
+    <title><?= App\App::getTitle(); ?></title>
+    <link rel="shartcut icon" sizes="196x196" href="images/type9-removebg-preview.png" type="image/png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

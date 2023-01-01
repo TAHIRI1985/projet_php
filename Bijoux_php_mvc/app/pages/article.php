@@ -12,8 +12,6 @@ $post = Article::find($_GET['id']);
 if ($post === false) {
     App::notFound();
 }
-$categorie = Categorie::find($post->id_categories);
-
 
 ?>
 
@@ -21,7 +19,7 @@ $categorie = Categorie::find($post->id_categories);
 
 <div class=" divfieldset container-fluid">
     <div id="app" class="row justify-content-center  ">
-
+        <h4><?= $post->categorie ?></h4>
         <h5> <?= $post->getDescription() ?></h5>
         <h5><span class="prix"> <?= $post->getPrix() ?> </span></h5>
 
