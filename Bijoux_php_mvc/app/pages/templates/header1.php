@@ -13,7 +13,7 @@
                 <div class="offcanvas-body ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><b>Acceuil</b></a>
+                            <a class="nav-link active" aria-current="page" href="index.php?p=home"><b>Acceuil</b></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><b>Cartes Cadeaux</b></a>
@@ -23,20 +23,29 @@
                                 <b>Bijoux</b>
                             </a>
                             <ul class="dropdown-menu bBijoux">
-                                <li><a class="dropdown-item" href="#">Collier</a></li>
+                                <li><a class="dropdown-item" href="index.php?p=categorie&id=1">Collier</a></li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Bague</a>
+                                    <a class="dropdown-item" href="index.php?p=categorie&id=4">Bague</a>
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="#">B.d'orielle</a>
+                                    <a class="dropdown-item" href="index.php?p=categorie&id=2">B.d'orielle</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Bracelet</a>
+                                    <a class="dropdown-item" href="index.php?p=categorie&id=3">Bracelet</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Montre</a>
+                                    <a class="dropdown-item" href="index.php?p=categorie&id=6">Montre</a>
                                 </li>
+                                <li>
+                                    <a class="dropdown-item" href="index.php?p=categorie&id=5">B.cheville</a>
+                                </li>
+
+
+
+
+
+
                             </ul>
                         </li>
                     </ul>

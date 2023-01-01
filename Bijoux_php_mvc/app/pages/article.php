@@ -37,3 +37,10 @@ if ($post === false) {
 
     </div>
 </div>
+
+<a href="index.php?p=home" class="btn btn-warning   button">Retourner à l'accueil</a>
+<style type="text/css">
+    a.button {
+        margin: 20px;
+    }
+</style>

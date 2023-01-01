@@ -58,3 +58,10 @@ App::setTitle($categorie->nom_Categorie);
 
     </div>
 </div>
+
+<a href="index.php?p=home" class="btn btn-warning button">Retourner à l'accueil</a>
+<style>
+    a.button {
+        margin: 20px;
+    }
+</style>
