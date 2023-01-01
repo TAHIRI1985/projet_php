@@ -23,6 +23,6 @@ class App
     public static function notFound()
     {
         header("HTTP/1.0 4004 Not Found");
-        header('location:index.php?=p404');
+        header('location:index.php?p=404');
     }
 }
